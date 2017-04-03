@@ -1,6 +1,6 @@
-// /**
-//  * 封装cookie和localStorage
-//  */
+/**
+ * 封装cookie和localStorage
+ */
 class Cookies {
     constructor() {};
     static setCookie(key, value) {
@@ -31,8 +31,8 @@ class Cookies {
      */
     static deleteCookie(key) {
         let exp = new Date();
-        exp.setTime(exp.getTime() + (-1 * 24 * 60 * 60 * 1000));
-        var cval = this.getCookie(keyname);
+        exp.setTime(exp.getTime() - (24 * 60 * 60 * 1000));
+        var cval = this.getCookie(key);
         document.cookie = key + "=" + cval + "; expires=" + exp.toGMTString();
     };
     /**

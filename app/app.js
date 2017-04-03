@@ -1,5 +1,5 @@
 /**
- * ndr jssdk by佳期
+ * ndr jssdk
  */
 import lcServer from './lcServer';
 import config from './config';

@@ -14,15 +14,10 @@ export default {
         return new Date();
     },
     getAssetList: function () {
-        console.log(Cookies.setCookie('', 'libin123'));
+        console.log(Cookies.setCookie('name', 'demo'));
         console.log(Cookies.getCookie('name'));
         console.log(Cookies.deleteCookie('name'));
         console.log(Cookies.getCookie('name'));
         console.log(Cookies.clearCookie());
-        // store.clear();
-        //console.log(Cookies.deleteCookie(''));
-        // console.log(Cookies);
-        // Cookies.clearCookie('name1');
-        // return Cookies.getCookie('name1');
     }
 }
