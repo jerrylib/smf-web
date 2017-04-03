@@ -1,4 +1,11 @@
-import config from './config.json';
-import './main.css';
-console.log('hello world',config.name);
-document.body.append('nice to meet you')
+/**
+ * ndr jssdk by佳期
+ */
+import lcServer from './lcServer';
+import config from './config';
+//
+let username = 'libin';
+document.cookie="name1="+username;
+document.cookie="name="+username;
+lcServer.setEnv(config.env);
+console.log(lcServer.getAssetList());
