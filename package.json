@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "webpack-dev-server --progress",
     "build": "webpack",
-    "build1": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
+    "build1": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress",
+    "lint": "eslint ./app.js"
   },
   "author": "佳期",
   "license": "ISC",
   "dependencies": {
+    "admin-lte": "^2.3.11",
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
@@ -30,6 +32,8 @@
     "webpack-dev-server": "^2.4.2"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
     "file-loader": "^0.11.1",
     "url-loader": "^0.5.8"
   }
